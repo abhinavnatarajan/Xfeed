@@ -2,13 +2,14 @@
 Xfeed is audio processing software for improving the experience of listening to stereo music on headphones through crossfeed. It is available as a 64-bit cross-platform VST3 plugin, or as a standalone 64-bit program for Windows 10 and above. 
 
 ## Installation
-There are multiple ways of using Xfeed.
+There are multiple ways of using Xfeed. Dowload the VST3 plugin and/or Windows executable from the assets folder of the [latest release](https://github.com/abhinavnatarajan/Xfeed/releases). 
 1. To use the VST3 plugin, copy `Xfeed.vst3` into your VST3 folder.
 
     * On Windows this is usually `C:\Program Files\Common Files\VST3`.
     * On Mac OS there are two folders for VST3 plugins, one for the current user `~/Library/Audio/Plug-Ins/VST3`, and a systemwide folder `Macintosh HD/Library/Audio/Plug-Ins/VST3`.
 
- The VST3 plugin is meant primarily for use inside a digital audio workstation, but can also be used for all system audio via any lightweight VST host program that is capable of running VST3 plugins. More instructions are provided below. 
+   The VST3 plugin is meant primarily for use inside a digital audio workstation, but can also be used for all system audio via any lightweight VST host program that is capable of running VST3 plugins. More instructions are provided below. 
+
 2. To use the standalone version on Windows, Xfeed must be able to access system audio. To do this, install software such as [VB-Cable](https://vb-audio.com/Cable/index.htm) or [JACK](https://jackaudio.org/) and use them to set up a virtual audio input/audio output pair. Use the virtual output as your system audio playback device. Then simply place `Xfeed.exe` anywhere you like and run it. Use the options menu in Xfeed to choose the virtual audio input as the audio source, and set your headphone device as the audio output. 
 
 3. Rolling your own: you could also compile Xfeed yourself. There are a few reasons why you may want to do this:
@@ -16,7 +17,7 @@ There are multiple ways of using Xfeed.
     * You would like to build a standalone version for Mac OS. The source code for Xfeed includes the necessary files to create a standalone version on Mac. At the time of writing, I merely don't have a Mac to compile and build this standalone version.
     * You would like to build AAX, RTAS, or AU versions of Xfeed for use in Pro Tools. 
 
- Xfeed was built using the JUCE framework (v7.0.2) in C++ and compiled with MSVC C++20. The simplest way to generate the makefiles necessary to compile Xfeed is to use the program `Projucer.exe` (which is included with the JUCE library) to open `Xfeed.jucer` and generate the project structure. 
+   Xfeed was built using the JUCE framework (v7.0.2) in C++ and compiled with MSVC C++20. The simplest way to generate the makefiles necessary to compile Xfeed is to use the program `Projucer.exe` (which is included with the JUCE library) to open `Xfeed.jucer` and generate the project structure. 
 
 ## Usage
 There are only three settings in Xfeed:
@@ -31,24 +32,24 @@ There are only three settings in Xfeed:
 
 
 ## FAQs
-Q. What is crossfeed?
+**Q.** What is crossfeed?
 
-A. Crossfeed refers to how our ears typically perceive sounds from both the left and right audio channels when listening to audio played on stereo speakers. Headphones do not usually have any crossfeed beacause the left and right channels of audio are isolated the left and right ear. This results in an unnaturally wide and unrealistic soundstage. 
-
-
-Q. Does crossfeed work by mixing the left and right audio channels together? 
-
-A. The very simplest of crossfeed algorithms do exactly this, but Xfeed goes further. Our ears use the tiny differences between the same sound arriving at the left and right ears to determine the origin of that sound in 3D space. These differences include the time at which that sound arrives (inter-aural time difference, or ITD) and differences in the frequency response (both magnitude and phase) between the sounds arriving at the left and right ears. In particular, your head casts an acoustic 'shadow' between your left and right ears, so sound that travels from one side to the other experiences changes that aren't captured by just the time difference. 
+**A.** Crossfeed refers to how our ears typically perceive sounds from both the left and right audio channels when listening to audio played on stereo speakers. Headphones do not usually have any crossfeed beacause the left and right channels of audio are isolated the left and right ear. This results in an unnaturally wide and unrealistic soundstage. 
 
 
-Q. Is crossfeed the same thing as binaural audio?
+**Q.** Does crossfeed work by mixing the left and right audio channels together? 
 
-A. No, although there are several similarities. The main goal of crossfeed is to improve spatial localisation in the left-right plane of the soundstage when listening on headphones, particularly when mixing music, and to make listening to music on headphones less fatiguing. The goal of binaural audio is to recreate a highly realistic 3D soundstage using only stereo audio. This gets very complicated very quickly, since factors like the shape of your head, the shape of your earlobes, and the size and shape of your torso affect the way you perceive sound. Binaural audio is often achieved through the use of Head Related Impulse Responses (HRIRs), which are filters that simulate these various factors, but the downside of using generic HRIRs is that they perceptibly colour the sound in erratic ways. This is fine for casual listening such as gaming and movie watching, but HRIRs fall short for mixing music. The only real solution is to use individualised HRIRs, but these are difficult to compute. I am not aware of any commercial services that currently offer individualised HRIR measurement (as of 2022).
+**A.** The very simplest of crossfeed algorithms do exactly this, but Xfeed goes further. Our ears use the tiny differences between the same sound arriving at the left and right ears to determine the origin of that sound in 3D space. These differences include the time at which that sound arrives (inter-aural time difference, or ITD) and differences in the frequency response (both magnitude and phase) between the sounds arriving at the left and right ears. In particular, your head casts an acoustic 'shadow' between your left and right ears, so sound that travels from one side to the other experiences changes that aren't captured by just the time difference. 
 
 
-Q. Are there other crossfeed plugins?
+**Q.** Is crossfeed the same thing as binaural audio?
 
-A. Yes. [CanOpener Studio](https://goodhertz.com/canopener-studio/) by GoodHertz Inc and [Nx Virtual Mix Room](https://www.waves.com/plugins/nx#introducing-nx-virtual-mix-room) by Waves Audio are two paid alternatives. Both plugins offer many more features than Xfeed, but both plugins are paid software and are not open source. Waves Nx goes the route of trying to accurately simulate 3D psychoacoustics, and suffers from many of the problems oulined above. See [here](https://goodhertz.com/tonal/canopener-vs-nx/) for an in-depth comparison between CanOpener Studio and Nx Virtual Mix Room. 
+**A.** No, although there are several similarities. The main goal of crossfeed is to improve spatial localisation in the left-right plane of the soundstage when listening on headphones, particularly when mixing music, and to make listening to music on headphones less fatiguing. The goal of binaural audio is to recreate a highly realistic 3D soundstage using only stereo audio. This gets very complicated very quickly, since factors like the shape of your head, the shape of your earlobes, and the size and shape of your torso affect the way you perceive sound. Binaural audio is often achieved through the use of Head Related Impulse Responses (HRIRs), which are filters that simulate these various factors, but the downside of using generic HRIRs is that they perceptibly colour the sound in erratic ways. This is fine for casual listening such as gaming and movie watching, but HRIRs fall short for mixing music. The only real solution is to use individualised HRIRs, but these are difficult to compute. I am not aware of any commercial services that currently offer individualised HRIR measurement (as of 2022).
+
+
+**Q.** Are there other crossfeed plugins?
+
+**A.** Yes. [CanOpener Studio](https://goodhertz.com/canopener-studio/) by GoodHertz Inc and [Nx Virtual Mix Room](https://www.waves.com/plugins/nx#introducing-nx-virtual-mix-room) by Waves Audio are two paid alternatives. Both plugins offer many more features than Xfeed, but both plugins are paid software and are not open source. Waves Nx goes the route of trying to accurately simulate 3D psychoacoustics, and suffers from many of the problems oulined above. See [here](https://goodhertz.com/tonal/canopener-vs-nx/) for an in-depth comparison between CanOpener Studio and Nx Virtual Mix Room. 
 
 [//]: # (Add donation link)
 
