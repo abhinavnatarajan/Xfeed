@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733333"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="logo32.png"
+   inkscape:export-xdpi="12"
+   inkscape:export-ydpi="12"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9540685"
+     inkscape:cx="180.76765"
+     inkscape:cy="115.77254"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#add8e6;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="path3966"
+       cx="33.7215"
+       cy="33.85585"
+       rx="32.109322"
+       ry="32.154102" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:90.3111px;font-family:Corbel;-inkscape-font-specification:'Corbel Light';fill:#42a2c8;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="5.2685962"
+       y="64.127495"
+       id="text790"><tspan
+         sodipodi:role="line"
+         id="tspan788"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.3111px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';fill:#42a2c8;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="5.2685962"
+         y="64.127495">X</tspan></text>
+    <path
+       style="fill:#42a2c8;fill-opacity:1;stroke:#000000;stroke-width:0"
+       d="M 61.704643,43.536634 V 64.203928 H 43.052578"
+       id="path2458" />
+    <path
+       style="fill:#42a2c8;fill-opacity:1;stroke:#000000;stroke-width:0"
+       d="M 6.1514936,43.536635 V 64.203929 H 24.713992"
+       id="path2460" />
+  </g>
+</svg>
