@@ -57,8 +57,8 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
     // these are double rather than float because they are used by the GUI knobs, which accepts only double
-    constexpr static double maxGaindB = 12.0, minGaindB = -12.0, defaultGaindB = 0.0;
-    constexpr static double maxAngle = 90.0, minAngle = 30.0, defaultAngle = 60.0;
+    constexpr static double maxGaindB = 12.0, minGaindB = -12.0, defaultGaindB = -1.0;
+    constexpr static double maxAngle = 90.0, minAngle = 0.0, defaultAngle = 60.0;
     constexpr static double maxDist = 5.0, minDist = 0.25, defaultDist = 1.0;
     juce::AudioParameterFloat* gaindB;
     juce::AudioParameterFloat* angle;

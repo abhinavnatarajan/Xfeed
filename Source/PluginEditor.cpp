@@ -66,7 +66,7 @@ XfeedAudioProcessorEditor::XfeedAudioProcessorEditor (XfeedAudioProcessor& p)
     angleKnob.setRotaryParameters(knobsMinAngle, knobsMaxAngle, true);
     angleKnob.setTextValueSuffix(juce::CharPointer_UTF8("\xc2\xb0")); // degree symbol
     angleKnob.setValue(p.defaultAngle);
-    gainKnob.setPopupMenuEnabled(true);
+    angleKnob.setPopupMenuEnabled(true);
     angleKnob.setPopupDisplayEnabled(false, false, this);
     angleKnob.setTextBoxStyle(juce::Slider::TextBoxBelow, false, 60, 25);
     angleKnob.setDoubleClickReturnValue(true, p.defaultAngle);
