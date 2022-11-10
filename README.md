@@ -1,6 +1,8 @@
 # Xfeed
 Xfeed is audio processing software for improving the experience of listening to stereo music on headphones through crossfeed. It is available as a 64-bit cross-platform VST3 plugin, or as a standalone 64-bit program for Windows 10 and above. 
 
+[![Latest release][release-img]][release-url]
+
 ## Installation
 There are multiple ways of using Xfeed. Dowload the VST3 plugin and/or Windows executable from the assets folder of the [latest release](https://github.com/abhinavnatarajan/Xfeed/releases). 
 1. To use the VST3 plugin, copy `Xfeed.vst3` into your VST3 folder.
@@ -52,4 +54,7 @@ There are only three settings in Xfeed:
 **A.** Yes. [CanOpener Studio](https://goodhertz.com/canopener-studio/) by GoodHertz Inc and [Nx Virtual Mix Room](https://www.waves.com/plugins/nx#introducing-nx-virtual-mix-room) by Waves Audio are two paid alternatives. Both plugins offer many more features than Xfeed, but both plugins are paid software and are not open source. Waves Nx goes the route of trying to accurately simulate 3D psychoacoustics, and suffers from many of the problems oulined above. See [here](https://goodhertz.com/tonal/canopener-vs-nx/) for an in-depth comparison between CanOpener Studio and Nx Virtual Mix Room. 
 
 [//]: # (Add donation link)
+
+[release-img]: https://img.shields.io/github/v/release/abhinavnatarajan/Xfeed?display_name=tag&logo=SemVer&sort=semver
+[release-url]: https://github.com/abhinavnatarajan/RedClust.jl/releases
 
