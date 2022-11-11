@@ -44,7 +44,7 @@ namespace ProjectInfo
 {
     const char* const  projectName    = "Xfeed";
     const char* const  companyName    = "Abhinav Natarajan";
-    const char* const  versionString  = "0.1.1";
-    const int          versionNumber  = 0x101;
+    const char* const  versionString  = "0.1.2";
+    const int          versionNumber  = 0x102;
 }
 #endif

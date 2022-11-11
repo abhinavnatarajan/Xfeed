@@ -339,7 +339,7 @@ void XfeedAudioProcessor::updateFilterCoeffs(float sampleRate)
     gain = juce::Decibels::decibelsToGain(static_cast<float>(*gaindB));
 }
 
-void XfeedAudioProcessor::updateBypassRamps() {
+void XfeedAudioProcessor::updateBypassRamp() {
     if (*bypass) {
         wetLevel.setTargetValue(0.0f);
         dryLevel.setTargetValue(1.0f);

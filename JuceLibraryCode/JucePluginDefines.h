@@ -17,10 +17,10 @@
  #define JucePlugin_Build_VST3             1
 #endif
 #ifndef  JucePlugin_Build_AU
- #define JucePlugin_Build_AU               1
+ #define JucePlugin_Build_AU               0
 #endif
 #ifndef  JucePlugin_Build_AUv3
- #define JucePlugin_Build_AUv3             1
+ #define JucePlugin_Build_AUv3             0
 #endif
 #ifndef  JucePlugin_Build_AAX
  #define JucePlugin_Build_AAX              0
@@ -32,7 +32,7 @@
  #define JucePlugin_Build_Unity            0
 #endif
 #ifndef  JucePlugin_Build_LV2
- #define JucePlugin_Build_LV2              1
+ #define JucePlugin_Build_LV2              0
 #endif
 #ifndef  JucePlugin_Enable_IAA
  #define JucePlugin_Enable_IAA             0
@@ -77,13 +77,13 @@
  #define JucePlugin_EditorRequiresKeyboardFocus  0
 #endif
 #ifndef  JucePlugin_Version
- #define JucePlugin_Version                0.1.1
+ #define JucePlugin_Version                0.1.2
 #endif
 #ifndef  JucePlugin_VersionCode
- #define JucePlugin_VersionCode            0x101
+ #define JucePlugin_VersionCode            0x102
 #endif
 #ifndef  JucePlugin_VersionString
- #define JucePlugin_VersionString          "0.1.1"
+ #define JucePlugin_VersionString          "0.1.2"
 #endif
 #ifndef  JucePlugin_VSTUniqueID
  #define JucePlugin_VSTUniqueID            JucePlugin_PluginCode
@@ -155,7 +155,7 @@
  #define JucePlugin_ARAFactoryID           "com.AbhinavNatarajan.Xfeed.factory"
 #endif
 #ifndef  JucePlugin_ARADocumentArchiveID
- #define JucePlugin_ARADocumentArchiveID   "com.AbhinavNatarajan.Xfeed.aradocumentarchive.0.1.0"
+ #define JucePlugin_ARADocumentArchiveID   "com.AbhinavNatarajan.Xfeed.aradocumentarchive.0.1.1"
 #endif
 #ifndef  JucePlugin_ARACompatibleArchiveIDs
  #define JucePlugin_ARACompatibleArchiveIDs  ""

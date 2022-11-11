@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="ouCn2y" name="Xfeed" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="0.1.1"
-              companyWebsite="abhinavnatarajan.org" pluginFormats="buildAU,buildAUv3,buildLV2,buildStandalone,buildVST3"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="0.1.2"
+              companyWebsite="abhinavnatarajan.org" pluginFormats="buildStandalone,buildVST3"
               pluginVST3Category="Fx,Spatial,Stereo,Tools" cppLanguageStandard="20"
               pluginAUIsSandboxSafe="1" pluginManufacturer="Abhinav Natarajan"
               pluginDesc="Crossfeed for externalisation of headphone audio"
@@ -50,7 +50,7 @@
     <VS2022 targetFolder="Builds/VisualStudio2022" smallIcon="" bigIcon="I8ao0z">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="Xfeed"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="Xfeed" enablePluginBinaryCopyStep="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Xfeed" vst3BinaryLocation="%CommonProgramW6432%\VST3"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../../../../../../../juce-7.0.2-windows/JUCE/modules"/>

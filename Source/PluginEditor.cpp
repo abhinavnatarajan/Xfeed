@@ -18,17 +18,21 @@ XfeedAudioProcessorEditor::XfeedAudioProcessorEditor (XfeedAudioProcessor& p)
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
 
-    // Set colours
+    // Set colours and labels
     bgcolour = juce::Colours::lightblue;
-    buttonOffColour = juce::Colour(0xff228b22);
-    buttonOnColour = juce::Colour(0xff42a2c8);
+    //buttonOffColour = juce::Colour(0xff228b22);
+    buttonOffColour = juce::Colours::darkseagreen;
+    //buttonOnColour = juce::Colour(0xff42a2c8);
+    buttonOnColour = juce::Colours::darksalmon;
     textColour = juce::Colour(0xff1e1e1e);
     textBoxBackgroundColour = juce::Colour(0xff263238);
     getLookAndFeel().setColour(juce::Label::textColourId, textColour); // labels
     getLookAndFeel().setColour(juce::Slider::textBoxBackgroundColourId, textBoxBackgroundColour); // slider text box background
-    getLookAndFeel().setColour(juce::TextButton::buttonColourId, buttonOffColour); // button engaged
-    getLookAndFeel().setColour(juce::TextButton::buttonOnColourId, buttonOnColour); // button disengaged
-    getLookAndFeel().setColour(juce::ComboBox::outlineColourId, juce::Colour(0x00000000)); // button outline
+    bypassButtonLookAndFeel.setColour(juce::TextButton::buttonColourId, buttonOffColour); // button engaged
+    bypassButtonLookAndFeel.setColour(juce::TextButton::buttonOnColourId, buttonOnColour); // button disengaged
+    bypassButtonLookAndFeel.setColour(juce::ComboBox::outlineColourId, juce::Colour(0x00000000)); // button outline
+    bypassButtonOnText = "Bypassed";
+    bypassButtonOffText = "Active";
 
     // Header
     addAndMakeVisible(&header);
@@ -83,7 +87,8 @@ XfeedAudioProcessorEditor::XfeedAudioProcessorEditor (XfeedAudioProcessor& p)
     bypassButton.setToggleable(true);
     bypassButton.setToggleState(false, juce::sendNotification);
     bypassButton.setClickingTogglesState(true);
-    bypassButton.setButtonText("Bypass");
+    bypassButton.setButtonText(bypassButtonOffText);
+    bypassButton.setLookAndFeel(&bypassButtonLookAndFeel);
     addAndMakeVisible(&bypassButton);
     bypassButton.addListener(this);
 
@@ -110,13 +115,13 @@ void XfeedAudioProcessorEditor::buttonClicked(juce::Button* button)
     if (button == &bypassButton) {
         if (button->getToggleState()) {
             *(audioProcessor.bypass) = true;
-            button->setButtonText("Bypassed");
+            button->setButtonText(bypassButtonOnText);
         }
         else {
             *(audioProcessor.bypass) = false;
-            button->setButtonText("Bypass");
+            button->setButtonText(bypassButtonOffText);
         }
-        audioProcessor.updateBypassRamps();
+        audioProcessor.updateBypassRamp();
     }
 }
 
