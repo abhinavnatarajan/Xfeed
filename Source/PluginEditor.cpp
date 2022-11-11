@@ -18,7 +18,7 @@ XfeedAudioProcessorEditor::XfeedAudioProcessorEditor (XfeedAudioProcessor& p)
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
 
-    // Set colours and labels
+    // Set colours and labels and labels
     bgcolour = juce::Colours::lightblue;
     //buttonOffColour = juce::Colour(0xff228b22);
     buttonOffColour = juce::Colours::forestgreen;
