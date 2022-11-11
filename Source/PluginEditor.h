@@ -32,13 +32,11 @@ private:
     void sliderValueChanged(juce::Slider* slider) override;
     void buttonClicked(juce::Button* button) override;
     
-    //Drawable svg_drawable_play;
-    juce::Label header;
-    juce::Slider gainKnob;
-    juce::Label gainKnobLabel;
-    juce::Slider angleKnob;
-    juce::Label angleKnobLabel;
+    juce::Label header, gainKnobLabel, angleKnobLabel;;
+    juce::Slider gainKnob, angleKnob;
     juce::TextButton bypassButton;
+    juce::LookAndFeel_V4 bypassButtonLookAndFeel;
+    juce::String bypassButtonOffText, bypassButtonOnText;
 
     juce::Colour bgcolour, buttonOnColour, buttonOffColour, textColour, textBoxBackgroundColour;
 

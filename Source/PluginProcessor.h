@@ -65,7 +65,7 @@ public:
     juce::AudioParameterBool* bypass;
     
     void updateFilterCoeffs(float sampleRate);
-    void updateBypassRamps();
+    void updateBypassRamp();
 
 private:
     float gain;

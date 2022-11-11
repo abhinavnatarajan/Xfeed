@@ -4,7 +4,7 @@ Xfeed is audio processing software for improving the experience of listening to 
 [![Latest release][release-img]][release-url]
 
 ## Installation
-There are multiple ways of using Xfeed. Dowload the VST3 plugin and/or Windows executable from the assets folder of the [latest release](https://github.com/abhinavnatarajan/Xfeed/releases). 
+There are multiple ways of using Xfeed. Dowload the VST3 plugin and/or Windows executable from the assets folder of the [latest release](https://github.com/abhinavnatarajan/Xfeed/releases/latest/).
 1. To use the VST3 plugin, copy `Xfeed.vst3` into your VST3 folder.
 
     * On Windows this is usually `C:\Program Files\Common Files\VST3`.
@@ -19,7 +19,7 @@ There are multiple ways of using Xfeed. Dowload the VST3 plugin and/or Windows e
     * You would like to build a standalone version for Mac OS. The source code for Xfeed includes the necessary files to create a standalone version on Mac. At the time of writing, I merely don't have a Mac to compile and build this standalone version.
     * You would like to build AAX, RTAS, or AU versions of Xfeed for use in Pro Tools. 
 
-   Xfeed was built using the JUCE framework (v7.0.2) in C++ and compiled with MSVC C++20. The simplest way to generate the makefiles necessary to compile Xfeed is to use the program `Projucer.exe` (which is included with the JUCE library) to open `Xfeed.jucer` and generate the project structure. 
+   Xfeed was built using the JUCE framework (v7.0.2) in C++ and compiled with MSVC C++20. Download the [source code](https://github.com/abhinavnatarajan/Xfeed/releases/latest/) and extract it. The simplest way to generate the makefiles necessary to compile Xfeed is to use the program `Projucer.exe` (which is included with the JUCE library) to open `Xfeed.jucer` and generate the project structure. 
 
 ## Usage
 There are only three settings in Xfeed:
@@ -56,5 +56,5 @@ There are only three settings in Xfeed:
 [//]: # (Add donation link)
 
 [release-img]: https://img.shields.io/github/v/release/abhinavnatarajan/Xfeed?display_name=tag&logo=SemVer&sort=semver
-[release-url]: https://github.com/abhinavnatarajan/RedClust.jl/releases
+[release-url]: https://github.com/abhinavnatarajan/Xfeed/releases
 
